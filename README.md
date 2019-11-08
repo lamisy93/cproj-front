@@ -36,3 +36,30 @@ Structure du JS
 src/js
     components/(dumb component) : composants  normalement simples
     pages/(HOC : High order component) : composants parent qui souvent appellent d'autres composants, composants avec très souvent de la logique. 
+
+-------------------------------------------------------------------------
+
+Notre bundler est parcel.
+
+Il va par exemple traduire nos fichiers .less en fichiers .css compréhensible par le navigateur
+
+Parcel est livré avec un sourcemap. qui permet de mapper les fichiers de destination avec les fichiers sources pour pouvoir ajuster votre code source par la suite.
+
+Parcel est livré avec un module de rechargement instantané (en gros, il change le fichier dist à chaque fois que vous sauvegardé un fichier dans votre code source)
+
+------------------------------------------------------------------------
+
+## How to build
+
+### For developement
+
+Get Node.js for your platform (https://nodejs.org/en/)
+Node is required only to build the project. It is not required to run it.
+
+1. `npm install`
+2. `npm run dev`
+
+### For production
+
+1. `npm install`
+2. `npm run build`
